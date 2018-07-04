@@ -22,6 +22,7 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Special Requests:"
+                   TextWrapping="NoWrap"
                    Grid.Row="1"
                    Grid.Column="1"
                    VerticalAlignment="Center"/>
@@ -29,16 +30,29 @@
                    Grid.Row="1"
                    Grid.Column="2"
                    VerticalAlignment="Center"/>
-        <TextBlock Text="**Add to Order**"
-                   Grid.Row="4"
-                   Grid.Column="0"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"/>
-        <TextBlock Text="**Submit Order**"
-                   Grid.Row="4"
-                   Grid.Column="1"
-                   Grid.ColumnSpan="2"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
+        <Button x:Name="AddToOrderButton" 
+                Content="Add to Order"
+                Grid.Row="4"
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
+        <Button x:Name="SubmitOrderButton" 
+                Content="Submit Order"
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
+        <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" Margin="5" Background="Green">
+            
+        </ListView>
+        <ListView Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Margin="5" Background="RoyalBlue">
+            
+        </ListView>
+        
+        <AppBar Grid.ColumnSpan="3">
+            <AppBarButton Icon="Home" Label="Home" Click="Home_Click"/>
+        </AppBar>
     </Grid>
 </Page>
+ 

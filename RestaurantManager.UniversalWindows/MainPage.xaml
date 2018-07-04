@@ -28,17 +28,19 @@
                    Text="Internal Test Version"
                    TextAlignment="Center"
                    VerticalAlignment="Bottom"/>
-        <TextBlock Grid.Row="2"
+        <Button x:Name="GoToOrdersButton" Grid.Row="2"
                    Grid.Column="0"
-                   Text="**Go To Orders Views**"
+                   Content="Go To Orders View"
                    FontWeight="Medium"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
-        <TextBlock Grid.Row="2"
+                   VerticalAlignment="Center" 
+                   Click="GoToOrdersButton_Click"/>
+        <Button x:Name="SubmitOrderButton" Grid.Row="2"
                    Grid.Column="1"
-                   Text="**Submit Order**"
+                   Content="Submit Order"
                    FontWeight="Medium"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
+                   VerticalAlignment="Center" 
+                   Click="SubmitOrderButton_Click"/>
     </Grid>
 </Page>
